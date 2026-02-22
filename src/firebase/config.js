@@ -5,13 +5,13 @@ import { getAuth } from "firebase/auth";
 // TODO: Reemplaza esto con tus cerdenciales de la consola de Firebase
 // Configuración > General > Tus apps > Apps web
 const firebaseConfig = {
-    apiKey: "AIzaSyBlYgr6TGXChPC-F2g6r5D4iqzgGHPumpA",
-    authDomain: "tanesolutions-d86dc.firebaseapp.com",
-    projectId: "tanesolutions-d86dc",
-    storageBucket: "tanesolutions-d86dc.firebasestorage.app",
-    messagingSenderId: "643156601354",
-    appId: "1:643156601354:web:c53b73dbf3e9d9982a8df3",
-    measurementId: "G-23BEVHNZR4"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
